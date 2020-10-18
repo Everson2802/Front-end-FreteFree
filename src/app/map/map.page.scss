@@ -1,0 +1,84 @@
+#map_canvas {
+	width: 90%;
+	height: 80%;
+	border: 1px solid red;
+}
+
+
+#address {
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#map {
+	width: 100%;
+	height: 70vh;
+}
+
+.map-wrapper {
+	position: relative;
+
+	#map_center {
+		position: absolute;
+		z-index: 99;
+		height: 40px;
+		width: 40px;
+		top: 50%;
+		left: 50%;
+		margin-left: -21px;
+		margin-top: -41px;
+	}   
+}
+
+.forma-pagamento{
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px;
+	margin-bottom: 5px;
+}
+
+.header-info{
+	// position: absolute;
+	// background: #000;
+	position: absolute;
+	width: 90%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	border: none !important;
+}
+
+.header-info ion-toolbar{
+	border-radius: 30px !important;
+	padding: 0;
+}
+
+.icon-header{
+	margin-top: 30px;
+}
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+.icon-map{
+	font-size: 28px;
+}
+
+.img-map{
+	object-fit: contain;
+}
+
+.img-col{
+	border: 2px solid var(--ion-color-medium-tint);
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.img-col-active{
+	border: 2px solid var(--ion-color-success);
+}

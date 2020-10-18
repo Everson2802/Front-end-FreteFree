@@ -1,0 +1,7 @@
+{
+  "name": "FreteFree",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

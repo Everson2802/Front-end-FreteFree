@@ -1,0 +1,115 @@
+<ion-header [translucent]="true" class="header-info">
+
+  <ion-toolbar color="" class="ion-no-border">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1" class="icon-header ion-text-center">
+          <ion-icon name="locate-outline"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-input placeholder="Partida" style="border-bottom: 1px solid black"></ion-input>
+          <ion-input placeholder="Destino"></ion-input>
+        </ion-col>
+        <ion-col size="1" class="icon-header ion-text-center">
+          <ion-icon name="repeat-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="map-wrapper">
+    <div id="map_center">
+      <img src="assets/icon/location-marker.png" />
+    </div>
+    <div #map id="map"></div>
+  </div>
+
+  <ion-grid *ngIf="footerIndex==1">
+
+    <ion-row style="margin-top: 5px;">
+      <ion-col class="ion-text-center img-col" (click)="selectTravel(0)">
+        <ion-thumbnail style="margin: 0 auto">
+          <ion-img class="img-map" src="../assets/icon/moto.png"></ion-img>
+        </ion-thumbnail>
+        <ion-text>
+          <div>
+            <small>4KG</small>
+          </div>
+          <small>R$ 20.00</small>
+        </ion-text>
+      </ion-col>
+      <ion-col class="ion-text-center img-col" (click)="selectTravel(1)">
+        <ion-thumbnail style="margin: 0 auto">
+          <ion-img class="img-map" src="../assets/icon/carro.png"></ion-img>
+        </ion-thumbnail>
+        <ion-text>
+          <div>
+            <small>650KG</small>
+          </div>
+          <small>R$ 50.00</small>
+        </ion-text>
+      </ion-col>
+      <ion-col class="ion-text-center img-col" (click)="selectTravel(2)">
+        <ion-thumbnail style="margin: 0 auto">
+          <ion-img class="img-map" src="../assets/icon/caminhao.png"></ion-img>
+        </ion-thumbnail>
+        <ion-text>
+          <div>
+            <small>6000KG</small>
+          </div>
+          <small>R$ 100.00</small>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button shape="round" color="success" expand="full" (click)="selectRegionFooter(2)">ESCOLHER VEÍCULO
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid *ngIf="footerIndex==2">
+    <ion-row style="margin-top: 5px;">
+      <ion-col class="ion-text-center">
+        20min | 20km
+        <br>
+        <ion-icon name="person-circle-outline" style="font-size: 18px; margin-bottom: -3px; margin-top: 5px;">
+        </ion-icon> JOSE
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 5px;">
+      <ion-col class="ion-text-center forma-pagamento">
+        Forma de pagamento: Cartão final 1234
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 5px;">
+      <ion-col class="ion-text-center">
+        <ion-icon name="chatbox-outline" class="icon-map"></ion-icon>
+        <ion-text>
+          <div>Chat</div>
+        </ion-text>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-icon name="call-outline" class="icon-map"></ion-icon>
+        <ion-text>
+          <div>Ligar</div>
+        </ion-text>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-icon name="close-outline" class="icon-map"></ion-icon>
+        <ion-text>
+          <div>Cancelar</div>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

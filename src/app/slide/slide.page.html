@@ -1,0 +1,13 @@
+<ion-content color="dark">
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+        <ion-button class="btn-slide" shape="round" color="success" expand="full" (click)="nextSlide()">Continuar</ion-button>
+    </ion-slide>
+    <ion-slide>
+      <ion-button class="btn-slide" shape="round" color="success" expand="full" [routerDirection]="'root'"
+        [routerLink]="['/folder/inbox']">
+        Entrar
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

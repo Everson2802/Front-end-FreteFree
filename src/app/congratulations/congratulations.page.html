@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-no-border">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-list>
+      <ion-item lines="none">
+        <ion-label class="ion-text-center">
+          <div>Cadastro concluído com sucesso</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label class="ion-text-center">
+          <ion-icon color="success" name="shield-checkmark" style="font-size: 80px;"></ion-icon>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="ion-text-center">
+        <ion-label>
+          <div>Seja bem-vindo!</div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <div style="margin-top: 30px">
+      <ion-button shape="round" color="success" expand="full" [routerDirection]="'root'" [routerLink]="['/map']">Começar</ion-button>
+    </div>
+  </div>
+</ion-content>

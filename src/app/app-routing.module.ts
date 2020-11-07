@@ -18,6 +18,14 @@ const routes: Routes = [
   {
     path: 'slide',
     loadChildren: () => import('./slide/slide.module').then( m => m.SlidePageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'congratulations',
+    loadChildren: () => import('./congratulations/congratulations.module').then( m => m.CongratulationsPageModule)
   }
 ];
 

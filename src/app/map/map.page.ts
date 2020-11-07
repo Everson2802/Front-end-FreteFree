@@ -207,6 +207,8 @@ export class MapPage implements OnInit {
 
   selectRegionFooter(regionFooter: number) {
     this.footerIndex = regionFooter;
+    let map = document.getElementById('map');
+    map.style.height = '61.5vh';
   }
 
   selectTravel(numberImgCol: number) {

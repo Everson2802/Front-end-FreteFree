@@ -23,7 +23,7 @@
   <div id="container">
     <ion-list>
       <ion-item>
-        <ion-label class="input-login-label" position="stacked">Número do Celular</ion-label>
+        <ion-label class="input-login-label" position="stacked">E-mail</ion-label>
         <ion-input type="text" [(ngModel)]="email"></ion-input>
       </ion-item>
       <ion-item>
@@ -35,6 +35,9 @@
       <ion-button shape="round" color="success" expand="full" (click)="login()">Entrar</ion-button>
       <ion-text color="success">
         <div style="margin-top: 13px">Esqueci minha senha</div>
+      </ion-text>
+      <ion-text color="success">
+        <div style="margin-top: 13px" [routerDirection]="'root'" [routerLink]="['/register']">Criar conta</div>
       </ion-text>
     </div>
   </div>

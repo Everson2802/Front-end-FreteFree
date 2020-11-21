@@ -42,28 +42,6 @@ interface IUser {
     id: string
   }
   
-  export function procurarCorrida (user:IUser) {
-  
-    const {id} = user
-             
-    fetch (url + "/free/Inicial/Corrida/Ride/",{
-        method: 'GET',
-        headers: {
-          "Content-Type": 'application/json',
-        }
-       
-      },).then (response => {
-          console.log(response)
-      })
-   
-    } 
-
-    interface IUser {
-
-        distancia: number 
-        
-    }
-    
     export function calcularCorrida (user:IUser) {
         
         const {distancia} = user

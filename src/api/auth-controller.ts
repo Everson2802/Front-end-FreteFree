@@ -2,6 +2,7 @@ import {url} from "./config"
 
 interface IUser {
   celular: string
+  cnh: string
   documento: string
   email: string
   nome: string
@@ -12,9 +13,9 @@ interface IUser {
 
 export function cadastroDeUsuario (user:IUser) {
     
-    const {celular, documento, email, nome, password, role, sobrenome} = user
+    const {celular, cnh, documento, email, nome, password, role, sobrenome} = user
     
-    const body = JSON.stringify({celular, documento, email, nome, password, role, sobrenome})
+    const body = JSON.stringify({celular, cnh, documento, email, nome, password, role, sobrenome})
 
     fetch (url + "/free/Inicial/Auth/Signup",{
         method: 'POST',

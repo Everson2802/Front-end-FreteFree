@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-no-border">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-title size="large">
+        <h1>Validação</h1>
+      </ion-title>
+      <ion-text>
+        <div style="font-size: 12px; color: gray; padding-left: 20px; padding-right: 20px;">
+          Digite o código de 6 dígitos enviado a você em: <strong>e-mail</strong>
+        </div>
+      </ion-text>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-list>
+      <ion-item>
+        <ion-input style="text-align: center;" maxlength="11" required type="text" placeholder="_ _ _ _ _ _" [brmasker]="{mask:'0 0 0 0 0 0', len:11}"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div style="margin-top: 20px">
+      <ion-button shape="round" color="success" expand="full" [routerDirection]="'root'" [routerLink]="['/congratulations']">
+        Confirmar</ion-button>
+    </div>
+  </div>
+</ion-content>

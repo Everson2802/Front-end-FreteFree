@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'congratulations',
     loadChildren: () => import('./congratulations/congratulations.module').then( m => m.CongratulationsPageModule)
+  },
+  {
+    path: 'validation',
+    loadChildren: () => import('./validation/validation.module').then( m => m.ValidationPageModule)
   }
 ];
 

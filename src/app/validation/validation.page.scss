@@ -12,12 +12,8 @@ ion-content{
   position: absolute;
   left: 13px;
   right: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.title{
-  text-align: center !important;
+  top: 25%;
+  // transform: translateY(-50%);
 }
 
 #container strong {
@@ -38,4 +34,14 @@ ion-content{
 
 .input-login-label{
   color: #868585;
+}
+
+.input-codigo
+{ 
+  font-size: 20px;
+  background:none; 
+  outline: none; 
+  -webkit-appearance: none; 
+  box-shadow: none !important; 
+  border: none; 
 }

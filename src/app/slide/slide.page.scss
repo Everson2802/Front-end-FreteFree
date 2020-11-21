@@ -2,6 +2,8 @@ ion-slides {
 	height: 100%;
 	--bullet-background: var(--ion-color-success-tint);
 	--bullet-background-active: var(--ion-color-success);
+	background: url('../../assets/img/fundo_tela.png') 0 0/110% 100% !important;
+	background-position: -30px 0px !important; 
 }
 
 .btn-slide{
